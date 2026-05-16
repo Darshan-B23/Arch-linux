@@ -1,0 +1,236 @@
+/* =====================================================
+   R O F I   — Cyber Blue / Catppuccin Hybrid
+   ===================================================== */
+
+configuration {
+    modi: "drun,run,window";
+    show-icons: true;
+    icon-theme: "Papirus";
+    display-drun: " Apps";
+    display-run: " Run";
+    display-window: " Windows";
+    drun-display-format: "{icon}  {name}";
+    font: "JetBrainsMono Nerd Font 12";
+}
+
+/* =====================================================
+   GLOBAL
+   ===================================================== */
+
+* {
+    bg-main:            #1e1e2e;
+    bg-widget:          rgba(255,255,255,0.05);
+    bg-selected:        #1e3a5f;
+
+    border-color:       rgba(255,255,255,0.10);
+
+    fg-main:            #cdd6f4;
+    fg-bright:          #f8fafc;
+    fg-soft:            #cbd5e1;
+
+    accent-blue:        #38bdf8;
+    accent-cyan:        #00e5ff;
+    accent-purple:      #a78bfa;
+    accent-pink:        #f5c2e7;
+
+    urgent:             #ff5f87;
+    success:            #00ff99;
+
+    border-radius:      10px;
+}
+
+/* =====================================================
+   WINDOW
+   ===================================================== */
+
+window {
+    transparency:       "real";
+    location:           center;
+    anchor:             center;
+
+    width:              38%;
+    border:             2px;
+    border-color:       @border-color;
+    border-radius:      @border-radius;
+
+    background-color:   rgba(15,15,15,0.72);
+    padding:            18px;
+}
+
+/* =====================================================
+   MAIN CONTAINER
+   ===================================================== */
+
+mainbox {
+    spacing:            14px;
+    background-color:   transparent;
+}
+
+/* =====================================================
+   INPUT BAR
+   ===================================================== */
+
+inputbar {
+    children:           [ prompt, entry ];
+    spacing:            10px;
+
+    padding:            12px;
+    border-radius:      @border-radius;
+
+    background-color:   @bg-widget;
+    border:             1px;
+    border-color:       @border-color;
+}
+
+/* Prompt Icon */
+
+prompt {
+    text-color:         @accent-cyan;
+    background-color:   transparent;
+}
+
+/* Search Entry */
+
+entry {
+    text-color:         @fg-main;
+    placeholder:        "Search...";
+    placeholder-color:  #6b7280;
+
+    background-color:   transparent;
+}
+
+/* =====================================================
+   MODE SWITCHER
+   ===================================================== */
+
+mode-switcher {
+    spacing:            10px;
+    background-color:   transparent;
+}
+
+button {
+    padding:            10px 16px;
+
+    border-radius:      8px;
+    border:             1px;
+    border-color:       transparent;
+
+    background-color:   @bg-widget;
+    text-color:         @fg-soft;
+}
+
+button selected {
+    background-color:   rgba(56,189,248,0.18);
+    border-color:       rgba(56,189,248,0.35);
+    text-color:         @accent-blue;
+}
+
+/* =====================================================
+   LIST VIEW
+   ===================================================== */
+
+listview {
+    lines:              8;
+    columns:            1;
+
+    spacing:            8px;
+    scrollbar:          false;
+
+    background-color:   transparent;
+}
+
+/* =====================================================
+   ELEMENTS
+   ===================================================== */
+
+element {
+    padding:            12px;
+    border-radius:      10px;
+
+    background-color:   transparent;
+    text-color:         @fg-main;
+}
+
+element normal.normal {
+    background-color:   transparent;
+    text-color:         @fg-main;
+}
+
+element selected.normal {
+    background-color:   rgba(30,58,95,0.92);
+
+    border:             1px;
+    border-color:       rgba(96,165,250,0.25);
+
+    text-color:         @fg-bright;
+}
+
+element selected.active {
+    background-color:   rgba(0,229,255,0.12);
+    text-color:         @accent-cyan;
+}
+
+element-text {
+    background-color:   transparent;
+    text-color:         inherit;
+    vertical-align:     0.5;
+}
+
+element-icon {
+    size:               26px;
+    background-color:   transparent;
+}
+
+/* =====================================================
+   MESSAGE / ERROR
+   ===================================================== */
+
+message {
+    border-radius:      10px;
+    padding:            10px;
+
+    background-color:   rgba(255,95,135,0.08);
+    border:             1px;
+    border-color:       rgba(255,95,135,0.25);
+}
+
+textbox {
+    text-color:         @fg-main;
+}
+
+/* =====================================================
+   SCROLLBAR
+   ===================================================== */
+
+scrollbar {
+    width:              4px;
+    border-radius:      10px;
+    background-color:   rgba(255,255,255,0.05);
+}
+
+handle {
+    background-color:   rgba(56,189,248,0.35);
+    border-radius:      10px;
+}
+
+/* =====================================================
+   ENTRY CURSOR
+   ===================================================== */
+
+entry cursor {
+    background-color:   #4cc9f0;
+    text-color:         #08131f;
+}
+
+/* =====================================================
+   POWEROFF STYLE BLUR VIBE
+   ===================================================== */
+
+dummy {
+    background-image: linear-gradient(
+        45deg,
+        rgba(56,189,248,0.03),
+        rgba(167,139,250,0.03),
+        rgba(245,194,231,0.03)
+    );
+}
