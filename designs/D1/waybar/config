@@ -1,0 +1,71 @@
+{
+    "layer": "top",
+    "position": "top",
+    "margin-top": 10,
+    "margin-left": 15,
+    "margin-right": 15,
+    "spacing": 4,
+    "modules-left": ["hyprland/workspaces", "cpu", "memory","hyprland/window"],
+    "modules-center": ["clock"],
+    "modules-right": ["network", "bluetooth", "pulseaudio","backlight", "battery"],
+
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "on-click": "activate",
+        "format-icons": {
+            "active": "󰮯",
+            "empty": "",    /* A tiny, subtle dot for empty ones */
+            "default": "󰊠"   /* Regular icon for ones with apps */
+        },
+        "persistent-workspaces": {
+            "*": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        }
+    },
+    "backlight": {
+    "format": "{percent}% 󰃠"
+    },
+    "hyprland/window": {
+    	"format": "{}",
+    	"max-length": 40,
+    	"separate-outputs": true
+    },
+    "cpu":{
+        "interval": 10,
+        "format": "  {usage}%",
+        "max-length": 10
+    },
+    "memory": {
+        "interval": 30,
+        "format": "  {}%",
+        "max-length": 10
+    },
+    "clock": {
+        "format": "{:%I:%M %p}",
+        "tooltip-format": "{:%Y-%m-%d}"
+    },
+    "network": {
+        "format-wifi": "  {essid} ({signalStrength}%)",
+        "format-ethernet": "󰈀  {ifname}",
+        "format-disconnected": "󰤭  Disconnected",
+        "tooltip-format": "{ifname} via {gwaddr}",
+        "on-click": "kitty -e nmtui"
+    },
+    "bluetooth": {
+        "format": " {status}",
+        "format-connected": " {device_alias}",
+        "format-connected-battery": " {device_alias} {device_battery_percentage}%",
+        "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
+        "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
+        "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+        "on-click": "kitty -e bluetoothctl"
+    },
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-muted": "󰝟",
+        "format-icons": { "default": ["󰕿", "󰖀", "󰕾"] }
+    },
+    "battery": {
+        "format": "{icon} {capacity}%",
+        "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+    }
+}

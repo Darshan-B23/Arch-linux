@@ -1,0 +1,184 @@
+=====================================================
+                FONT
+=====================================================
+
+Font Family:
+JetBrainsMono Nerd Font
+
+Recommended Sizes:
+Terminal: 14
+Waybar: 14px
+
+
+=====================================================
+                MAIN BACKGROUND COLORS
+=====================================================
+
+Primary Background:
+#1e1e2e
+
+Transparent Waybar Background:
+rgba(15, 15, 15, 0.7)
+
+Widget Background:
+rgba(255, 255, 255, 0.05)
+
+Border:
+rgba(255, 255, 255, 0.1)
+
+
+=====================================================
+                FOREGROUND / TEXT
+=====================================================
+
+Primary Text:
+#cdd6f4
+
+Bright White:
+#f8fafc
+
+Soft White:
+#cbd5e1
+
+
+=====================================================
+                CURSOR
+=====================================================
+
+Cursor:
+#4cc9f0
+
+Cursor Text:
+#08131f
+
+
+=====================================================
+                SELECTION
+=====================================================
+
+Selection Background:
+#1e3a5f
+
+Selection Foreground:
+#ffffff
+
+
+=====================================================
+                ANSI COLORS
+=====================================================
+
+Black:
+#0f172a
+
+Red:
+#ff5f87
+
+Green:
+#00ff99
+
+Yellow:
+#7dcfff
+
+Blue:
+#38bdf8
+
+Magenta:
+#7aa2f7
+
+Cyan:
+#00e5ff
+
+White:
+#cbd5e1
+
+
+=====================================================
+                BRIGHT ANSI COLORS
+=====================================================
+
+Bright Black:
+#334155
+
+Bright Red:
+#ff7aa2
+
+Bright Green:
+#00ffbf
+
+Bright Yellow:
+#93c5fd
+
+Bright Blue:
+#60a5fa
+
+Bright Magenta:
+#a78bfa
+
+Bright Cyan:
+#22d3ee
+
+Bright White:
+#f8fafc
+
+
+=====================================================
+                WAYBAR ACCENTS
+=====================================================
+
+Workspace Empty:
+#45475a
+
+Workspace Visible:
+#cdd6f4
+
+Workspace Active:
+#b4befe
+
+Clock:
+#f5c2e7
+
+CPU / Memory:
+#89b4fa
+
+Network:
+#a6e3a1
+
+Bluetooth:
+#89dceb
+
+
+=====================================================
+                TERMINAL APPEARANCE
+=====================================================
+
+Window Padding:
+10
+
+Background Opacity:
+0.92
+
+Rounded Widget Radius:
+8px / 10px
+
+Transparent Glass Effect:
+rgba(255,255,255,0.05)
+
+
+=====================================================
+                STYLE TYPE
+=====================================================
+
+Theme Style:
+Cyber Blue / Catppuccin Hybrid
+
+Main Accents:
+Blue
+Cyan
+Purple
+Soft Pink
+
+Look:
+Glassmorphism
+Minimal
+Modern
+Transparent

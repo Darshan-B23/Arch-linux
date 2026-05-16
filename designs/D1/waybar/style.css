@@ -1,0 +1,68 @@
+* {
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 14px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: rgba(15, 15, 15, 0.7); /* Transparent Dark */
+    color: #cdd6f4;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+#workspaces button {
+    padding: 0 3px;
+    background: transparent;
+    border: none;
+}
+
+#workspaces button.empty {
+    color: #45475a;     /* Very dark/faded dot, barely visible */
+}
+
+#workspaces button.visible {
+    color: #cdd6f4;     /* Bright for apps */
+}
+
+#workspaces button.active {
+    color: #b4befe;     /* Highlight for where you are */
+}
+#clock, #network, #pulseaudio, #battery {
+    padding: 0 10px;
+    margin: 4px 0;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+}
+
+#clock {
+    color: #f5c2e7;
+    font-weight: bold;
+}
+/* Add these to your existing style.css */
+
+#cpu, #memory {
+    padding: 0 10px;
+    margin: 4px 0;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    color: #89b4fa; /* Blue accent */
+}
+
+#network {
+    color: #a6e3a1; /* Green accent */
+}
+
+#bluetooth {
+    color: #89dceb; /* Sky blue accent */
+    background: rgba(255, 255, 255, 0.05);
+    padding: 0 10px;
+    margin: 4px 0;
+    border-radius: 10px;
+}
+
+/* Ensure spacing between modules on the left */
+#workspaces {
+    margin-right: 10px;
+}
