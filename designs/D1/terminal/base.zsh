@@ -1,3 +1,4 @@
+#sourced in ~/.zshrc
 # 1. Enable Tab Completion (Without this, pressing Tab does nothing)
 autoload -Uz compinit && compinit
 
